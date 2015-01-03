@@ -1,4 +1,3 @@
-@import "mixins";
 @import "variables";
 
 .tile {
@@ -24,7 +23,7 @@
         width: 100px;
         margin-top: -60px;
         @extend .box-shadow;
-        @include transition(background, 0.6s, ease);
+        transition: background, 0.6s, ease;
         
         i {
             display: table-cell;

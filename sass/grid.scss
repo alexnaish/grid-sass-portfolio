@@ -1,16 +1,13 @@
-@import "mixins";
 @import "variables";
 
 * {
-  @include box-sizing(border-box);
+  box-sizing: border-box;
 }
 
 .grid {
     width: $GRID_WIDTH;
     margin: 0 auto;
     height: 100%;
-//    border-left: 2px solid lightgray;
-//    border-right: 2px solid lightgray;
   
   &:after {
     /* Or @extend clearfix */
@@ -22,8 +19,6 @@
 
 [class*='col-'], .row {
 	float: left;
-//    border-left: 1px solid white;
-//    border-right: 1px solid white;
     .grid &:last-of-type {
   	     padding-right: 0;
     }

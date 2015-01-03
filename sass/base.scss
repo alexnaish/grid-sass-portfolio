@@ -1,4 +1,3 @@
-@import "mixins";
 @import "variables";
 
 body {
@@ -14,7 +13,7 @@ body {
 a {
     text-decoration: none;
     color: #294854;
-    @include transition(all, $TRANSITION_TIME, $TRANSITION_TYPE);
+    transition: all, $TRANSITION_TIME, $TRANSITION_TYPE;
     
     &:hover {
         color: #4a8399;
