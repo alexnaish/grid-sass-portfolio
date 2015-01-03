@@ -1,0 +1,36 @@
+$height : 70px;
+
+.blocks {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    
+    .panel {
+        width: 100%;
+        background: white;
+        margin: 20px 0;
+        @extend .box-shadow;
+        
+        &.main {
+            min-height: 160px;
+            padding: 20px;
+        }
+        
+    }
+    
+    li {
+        @extend .panel;
+        height: $height;
+        line-height: $height;
+        
+        .block-icon {
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+        
+        .block-text {
+            width: 90%;
+        }
+    }
+}

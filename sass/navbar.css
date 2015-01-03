@@ -1,0 +1,41 @@
+/* line 3, /Users/ana18/Documents/workspace/port/sass/navbar.scss */
+.nav-header-bg {
+  background-image: -webkit-radial-gradient(bottom, circle cover, #97d0e1, #427388 90%);
+  background-image: -moz-radial-gradient(bottom, circle cover, #97d0e1, #427388 90%);
+  background-image: -o-radial-gradient(bottom, circle cover, #97d0e1, #427388 90%);
+  background-image: radial-gradient(bottom, circle cover, #97d0e1, #427388 90%);
+  height: 400px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), 0 4px 13px rgba(0, 0, 0, 0.1), 0 9px 23px rgba(0, 0, 0, 0.1); }
+
+/* line 9, /Users/ana18/Documents/workspace/port/sass/navbar.scss */
+.nav-header {
+  width: 100%;
+  height: 75px;
+  margin: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(100, 100, 100, 0.1); }
+  /* line 16, /Users/ana18/Documents/workspace/port/sass/navbar.scss */
+  .nav-header ul li {
+    display: inline-block;
+    line-height: 75px; }
+    /* line 20, /Users/ana18/Documents/workspace/port/sass/navbar.scss */
+    .nav-header ul li a {
+      background: transparent;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 12pt;
+      letter-spacing: 1.5pt;
+      border-bottom: 1px solid transparent;
+      padding: 8px 0 8px 0;
+      margin-left: 30px;
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+      /* line 32, /Users/ana18/Documents/workspace/port/sass/navbar.scss */
+      .nav-header ul li a:hover {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+/*# sourceMappingURL=navbar.css.map */

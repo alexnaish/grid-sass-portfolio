@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "blocks.css",
+  "sources": [
+    "blocks.scss"
+  ],
+  "names": [],
+  "mappings": ";AAEA;EACI,SAAS;EACT,OAAO;EACP,QAAQ;;EAAZ,QAAQ,QAAQ,QAAQ;IAGhB,OAAO;IACP,YAAY;IACZ,QAAQ;;IAChB,QAAQ,MAAM,OAAO,QAAQ,EAAE;MAGnB,YAAY;MACZ,SAAS;;EAGrB,QAAQ;IAIA,QAtBE;IAuBF,aAvBE;;IAuBV,QAAQ,GAAG;MAGC,OAAO;MACP,OAAO;MACP,YAAY;;IACxB,QAAQ,GAAG;MAGC,OAAO",
+  "sourceRoot": ""
+}

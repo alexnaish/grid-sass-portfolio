@@ -1,0 +1,46 @@
+/* line 4, /Users/ana18/Documents/workspace/port/sass/tiles.scss */
+.tile {
+  width: 280px;
+  height: 280px;
+  background: white;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0 auto;
+  margin-top: 80px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  /* line 14, /Users/ana18/Documents/workspace/port/sass/tiles.scss */
+  .tile:hover .tile-icon {
+    background-color: #74a6bc; }
+  /* line 18, /Users/ana18/Documents/workspace/port/sass/tiles.scss */
+  .tile .tile-icon {
+    background-color: #97d0e1;
+    display: table;
+    border-radius: 50%;
+    height: 100px;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: -60px;
+    -webkit-transition: background 0.6s ease;
+    -moz-transition: background 0.6s ease;
+    -ms-transition: background 0.6s ease;
+    -o-transition: background 0.6s ease;
+    transition: background 0.6s ease; }
+    /* line 29, /Users/ana18/Documents/workspace/port/sass/tiles.scss */
+    .tile .tile-icon i {
+      display: table-cell;
+      color: #fff;
+      text-align: center;
+      vertical-align: middle;
+      text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0 4px 13px rgba(0, 0, 0, 0.1), 0 9px 23px rgba(0, 0, 0, 0.1); }
+  /* line 38, /Users/ana18/Documents/workspace/port/sass/tiles.scss */
+  .tile .tile-info {
+    padding-top: 1.6em; }
+    /* line 41, /Users/ana18/Documents/workspace/port/sass/tiles.scss */
+    .tile .tile-info h4 {
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 1.6em;
+      padding-bottom: 1em;
+      -webkit-font-smoothing: antialiased; }
+
+/*# sourceMappingURL=tiles.css.map */

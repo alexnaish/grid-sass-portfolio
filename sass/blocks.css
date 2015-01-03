@@ -1,0 +1,28 @@
+/* line 3, /Users/ana18/Documents/workspace/port/sass/blocks.scss */
+.blocks {
+  padding: 20px;
+  width: 100%;
+  height: 100%; }
+  /* line 8, /Users/ana18/Documents/workspace/port/sass/blocks.scss */
+  .blocks .panel, .blocks li {
+    width: 100%;
+    background: white;
+    margin: 20px 0; }
+    /* line 14, /Users/ana18/Documents/workspace/port/sass/blocks.scss */
+    .blocks .panel.main, .blocks li.main {
+      min-height: 160px;
+      padding: 20px; }
+  /* line 21, /Users/ana18/Documents/workspace/port/sass/blocks.scss */
+  .blocks li {
+    height: 70px;
+    line-height: 70px; }
+    /* line 26, /Users/ana18/Documents/workspace/port/sass/blocks.scss */
+    .blocks li .block-icon {
+      float: left;
+      width: 20%;
+      text-align: center; }
+    /* line 32, /Users/ana18/Documents/workspace/port/sass/blocks.scss */
+    .blocks li .block-text {
+      width: 90%; }
+
+/*# sourceMappingURL=blocks.css.map */

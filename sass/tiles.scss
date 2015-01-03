@@ -1,0 +1,50 @@
+@import "mixins";
+@import "variables";
+
+.tile {
+    width: 280px;
+    height: 280px;
+    background: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-top: 80px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    
+    &:hover .tile-icon {
+        background-color: #74a6bc;
+    }
+    
+    .tile-icon {
+        background-color: #97d0e1;
+        display: table;
+        border-radius: 50%;
+        height: 100px;
+        margin: 0 auto;
+        width: 100px;
+        margin-top: -60px;
+        @extend .box-shadow;
+        @include transition(background, 0.6s, ease);
+        
+        i {
+            display: table-cell;
+            color: #fff;
+            text-align: center;
+            vertical-align: middle;
+            text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0 4px 13px rgba(0, 0, 0, 0.1), 0 9px 23px rgba(0, 0, 0, 0.1);
+        }
+    }
+    
+    .tile-info {
+        padding-top: 1.6em;
+        
+        h4 {
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 1.6em;
+            padding-bottom: 1em;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+    
+}

@@ -1,0 +1,21 @@
+@mixin box-sizing($type) {
+  -webkit-box-sizing: $type;
+     -moz-box-sizing: $type;
+      -ms-box-sizing: $type;
+          box-sizing: $type;
+}
+
+@mixin radial-gradient($pos, $type, $start, $end) {
+    background-image: -webkit-radial-gradient($pos, $type, $start, $end);
+    background-image: -moz-radial-gradient($pos, $type, $start, $end);
+    background-image: -o-radial-gradient($pos, $type, $start, $end);
+    background-image: radial-gradient($pos, $type, $start, $end);
+}    
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}

@@ -1,0 +1,19 @@
+.hero {
+    padding-top: 110px;
+    height: 325px;
+    
+    h1 {
+        @extend .emphasis;
+        font-size: 60px;
+        letter-spacing: 8pt;
+    }
+    
+    h2 {
+        @extend .emphasis;
+        font-size: 22px;
+        letter-spacing: 4pt;
+        margin-top: 10px;
+        display: block;
+    }
+    
+}
