@@ -1,5 +1,6 @@
 .nav-header-bg {
-    radial-gradient: bottom, circle cover, #97d0e1, #427388 90%;
+    background: #427388;
+    background-image: radial-gradient(bottom, circle cover, #97d0e1, #427388 90%);
     height: 400px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), 0 4px 13px rgba(0, 0, 0, 0.1), 0 9px 23px rgba(0, 0, 0, 0.1);
 }
