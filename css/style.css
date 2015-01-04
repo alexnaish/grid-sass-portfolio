@@ -262,10 +262,29 @@ a:hover {
   height: 70px;
   line-height: 70px;
 }
+.blocks li:hover .block-icon {
+  background-color: #74a6bc;
+}
 .blocks li .block-icon {
   float: left;
-  width: 20%;
+  width: 50px;
+  height: 50px;
   text-align: center;
+  margin: 10px auto;
+  background-color: #97d0e1;
+  border-radius: 50%;
+  margin-left: -25px;
+  margin-right: 25px;
+  display: table;
+  -webkit-transition: background-color 0.6s ease;
+          transition: background-color 0.6s ease;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.blocks li .block-icon i {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 2px 3px, rgba(0, 0, 0, 0.09804) 0px 4px 13px, rgba(0, 0, 0, 0.09804) 0px 9px 23px;
 }
 .blocks li .block-text {
   width: 90%;
