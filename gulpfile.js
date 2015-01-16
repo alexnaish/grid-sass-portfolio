@@ -16,10 +16,7 @@ gulp.task('sass', function() {
             suffix: '.min'
         }))
         .pipe(minifycss())
-        .pipe(gulp.dest('css'))
-        .pipe(notify({
-            message: 'Styles task complete'
-        }));
+        .pipe(gulp.dest('css'));
 });
 
 // Watch
