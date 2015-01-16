@@ -12,7 +12,6 @@ var gulp = require('gulp'),
 gulp.task('sass', function() {
     return sass('sass/style.scss', {style: 'expanded'})
         .pipe(autoprefixer(['last 3 versions']))
-        .pipe(gulp.dest('css'))
         .pipe(rename({
             suffix: '.min'
         }))
