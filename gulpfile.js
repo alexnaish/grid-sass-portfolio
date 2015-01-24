@@ -1,13 +1,8 @@
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
-    plumber = require('gulp-plumber'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
-    rename = require('gulp-rename'),
-    notify = require('gulp-notify'),
-    del = require('del');
-
-
+    rename = require('gulp-rename');
 
 gulp.task('sass', function() {
     return sass('sass/style.scss', {style: 'expanded'})
