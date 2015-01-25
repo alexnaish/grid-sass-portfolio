@@ -7,20 +7,17 @@
     <title>AlexNaish.co.uk - Home</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="top">
     <div class="nav-header-bg">
         <div class="nav-header">
             <div class="grid">
                 <ul class="col-1-3 right">
-                    <li><a href="#work">My Work</a>
-                    </li>
-                    <li><a href="#cv">CV</a>
-                    </li>
-                    <li><a href="#contact">Contact</a>
-                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#beliefs">Beliefs</a></li>
+                    <li><a href="resume.pdf">CV</a></li>
                 </ul>
             </div>
         </div>
@@ -36,45 +33,7 @@
     </div>
     <section class="main">
         <div class="row title">
-            <h2>My Beliefs</h2>
-        </div>
-        <div class="section grid">
-            <div class="col-1-3">
-                <div class="tile">
-                    <div class="tile-icon">
-                        <i class="fa fa-3x fa-code"></i>
-                    </div>
-                    <div class="tile-info">
-                        <h4>Code</h4>
-                        <p>Lorem ipsum dolor sit amet!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1-3">
-                <div class="tile">
-                    <div class="tile-icon">
-                        <i class="fa fa-3x fa-envelope-o"></i>
-                    </div>
-                    <div class="tile-info">
-                        <h4>Communication</h4>
-                        <p>Lorem ipsum dolor sit amet!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-1-3">
-                <div class="tile">
-                    <div class="tile-icon">
-                        <i class="fa fa-3x fa-cloud"></i>
-                    </div>
-                    <div class="tile-info">
-                        <h4>Connectivity</h4>
-                        <p>Lorem ipsum dolor sit amet!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row title">
-            <h2>About Me</h2>
+            <h2 id="about">About Me</h2>
         </div>
         <div class="section grid">
             <div class="col-2-3">
@@ -84,7 +43,7 @@
                 <div class="blocks">
                     <div class="panel">
                         <div class="text">
-                            I am currently employed by Sky (British Sky Broadcasting) and have been since I first joined in 2013. I am currently working as a developer on the Now TV website, feel free to take a look <a href="http://www.nowtv.com">here</a>. 
+                            I am a London-based developer currently employed by Sky (British Sky Broadcasting) and have been since I first joined in 2013. I am currently working as a developer on the Now TV website, feel free to take a look <a href="http://www.nowtv.com">here</a>. 
                             <br />
                             I'm happy where I am presently but you're welcome to look over my LinkedIn profile or my CV. If you have an enquiry, feel free to <a href="mailto:alex.naish.90@gmail.com">email</a> me regarding anything you have seen.
                         </div>
@@ -118,20 +77,75 @@
                 <p></p>
             </div>
         </div>
-
+        <div class="row title">
+            <h2 id="beliefs">My Beliefs</h2>
+        </div>
+        <div class="section grid">
+            <div class="col-1-3">
+                <div class="tile">
+                    <div class="tile-icon">
+                        <i class="fa fa-3x fa-code"></i>
+                    </div>
+                    <div class="tile-info">
+                        <h4>Code</h4>
+                        <p>Clean, well thought out and tested code should be the only code that is ever shipped. Design, develop, test, launch and  repeat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-3">
+                <div class="tile">
+                    <div class="tile-icon">
+                        <i class="fa fa-3x fa-envelope-o"></i>
+                    </div>
+                    <div class="tile-info">
+                        <h4>Communication</h4>
+                        <p>I'm a strong believer in pair-programming. It increases work quality and knowledge sharing which means the whole team improves as well as the project.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1-3">
+                <div class="tile">
+                    <div class="tile-icon">
+                          <i class="fa fa-3x fa-code-fork"></i>
+                    </div>
+                    <div class="tile-info">
+                        <h4>Collaboration</h4>
+                        <p>Utilising open-source solutions where possible allows developers to rapidly try new options and gives flexibility in their application design without re-inventing the wheel.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="section">
         <div class="grid">
             <div class="col-2-3">
-                Alex Naish 2014
+                &#169; 2014 - <span id="currentYear"></span> - <a href="http://www.alexnaish.co.uk">alexnaish.co.uk</a>
             </div>
             <div class="col-1-3">
-                <a href="#">Back to top</a>
+                <a href="#top">Back to top</a>
             </div>
         </div>
     </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#currentYear').html( (new Date).getFullYear() );
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[id=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
+    </script>
+    
 </body>
 
 </html>

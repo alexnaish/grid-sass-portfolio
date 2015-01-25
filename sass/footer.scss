@@ -1,3 +1,15 @@
-footer {
+@import "variables";
+
+footer.section {
     background-color: #333;
+    padding: 40px 0;
+    color: white;
+    border-top: 2px solid darkgrey;
+    
+    a {
+        color: $ICON_IDLE_COLOUR;
+        &:hover{
+            color: $ICON_HOVER_COLOUR;
+        }
+    }
 }

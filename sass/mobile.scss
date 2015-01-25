@@ -1,0 +1,37 @@
+@media (max-width: 400px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .nav-header-bg {
+        height: 300px;
+    }
+    .hero {
+        
+        padding-top: 75px;
+        padding-left: 20px;
+        height: 225px;
+        
+        h1 {
+            font-size: 45px;
+            letter-spacing: 6pt;
+        }
+        
+    }
+    .grid {
+        width: 400px;
+        [class*='col-'] {
+            width: 100%;
+        }
+    }
+    .main .title h2 {
+        padding-left: 20px;
+    }
+    .blocks li {
+        width: 90%;
+        margin: 20px;
+    }
+    .tile {
+        margin: 80px 20px 30px;
+    }
+}
