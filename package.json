@@ -22,7 +22,6 @@
     "gulp-ruby-sass": "~1.0.0-alpha",
     "gulp-minify-css": "~0.3.11",
     "gulp-autoprefixer": "~2.0.0",
-    "gulp-notify": "~2.1.0",
     "gulp-rename": "~1.2.0"
   }
 }
